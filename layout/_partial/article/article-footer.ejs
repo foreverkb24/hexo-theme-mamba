@@ -1,0 +1,13 @@
+<footer>
+  <% if (index){ %>
+	<% if (item.excerpt){ %>
+		<div class="alignleft">
+			<a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
+		</div>
+	<% } %>
+  <% } else { %>
+	<%- partial('../post/category') %>
+	<%- partial('../post/tag') %>
+  <% } %>
+  <div class="clearfix"></div>
+</footer>
